@@ -1,0 +1,192 @@
+/* Ensure full height layout */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Background settings */
+body {
+    background-image: url('/images/backgroud.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 60px; /* Add padding to avoid content being hidden by footer */
+}
+
+/* Center text horizontally */
+.text-center {
+    text-align: center;
+}
+
+/* Center content horizontally and vertically */
+.vertical-center {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+    min-height: 75vh; /* Adjust height as needed */
+    padding: 20px; /* Ensure content does not overflow */
+    box-sizing: border-box; /* Include padding in the element's total width */
+}
+
+/* Frame around text */
+.text-frame {
+    border: 2px solid #000000; /* Black border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Space inside the frame */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 10px; /* Add spacing around the frame */
+}
+
+    /* Darker and bolder text color for headings and paragraphs */
+    .text-frame h2,
+    .text-frame p {
+        color: #000000; /* Black color */
+        font-weight: bold; /* Makes text bold */
+    }
+
+    .text-frame h2 {
+        font-weight: 900; /* More bold */
+    }
+
+    .text-frame p {
+        font-weight: 700; /* Regular bold */
+        color: #FFFFFF; /* White color */
+    }
+
+/* Button styles */
+.btn-custom {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000; /* Black background */
+    border: none;
+    border-radius: 5px;
+    display: inline-block; /* Ensure buttons are displayed inline */
+}
+
+    .btn-custom:hover {
+        background-color: #444; /* Darker background on hover */
+    }
+
+/* Align buttons in a container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Add space between buttons */
+}
+
+/* More button styles */
+.btn-more {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff; /* White background */
+    border: 2px solid #000; /* Black border */
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensure button is block-level for better alignment */
+    text-align: center;
+}
+
+    .btn-more:hover {
+        background-color: #f0f0f0; /* Light grey background on hover */
+    }
+
+/* Hidden menu styles */
+.more-menu {
+    display: none; /* Hide menu initially */
+    margin-top: 20px;
+    text-align: center; /* Center-align the menu items */
+}
+
+    .more-menu a {
+        display: block; /* Make links block-level for full-width clickable area */
+        margin: 10px 0;
+        padding: 10px 20px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #fff;
+        background-color: #000; /* Black background */
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+        .more-menu a:hover {
+            background-color: #444; /* Darker background on hover */
+        }
+
+/* Contact page specific styles */
+.contact-page .form-group {
+    margin-bottom: 20px; /* Add spacing between form fields */
+}
+
+.contact-page .form-control {
+    font-weight: bold; /* Make text inside form controls bold */
+    color: #000; /* Ensure text is visible */
+}
+
+.contact-page .form-control-lg {
+    margin-top: 10px; /* Add space above each text box */
+    margin-bottom: 10px; /* Add space below each text box */
+}
+
+.contact-page .btn-primary {
+    background-color: #000; /* Black background for button */
+    border: none;
+    font-weight: bold;
+}
+
+    .contact-page .btn-primary:hover {
+        background-color: #444; /* Darker background on hover */
+    }
+
+/* Auto-expand textarea */
+.auto-expand {
+    overflow: hidden; /* Hide scrollbars */
+    resize: none; /* Prevent manual resizing */
+}
+
+/* Contact page specific styles */
+.contact-page .form-group label {
+    color: #000; /* Dark black color */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Ensure the Contact Us heading is styled like other headings */
+.contact-page h2 {
+    color: #000; /* Dark black color */
+    font-weight: 900; /* Make text very bold */
+    font-size: 2em; /* Adjust size if needed */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+/* Donation page specific styles */
+.donation-page h2 {
+    color: #000; /* Dark black color */
+    font-weight: 900; /* Very bold text */
+    font-size: 2em; /* Adjust size if needed */
+    margin-bottom: 20px; /* Add space below heading */
+}
+
+.donation-page p {
+    color: #000; /* Dark black color */
+    font-weight: bold; /* Bold text */
+    font-size: 1.2em; /* Adjust size if needed */
+}
+
+/* General heading styles */
+Events-page h2 {
+    color: #000; /* Dark black color */
+    font-weight: 900; /* Very bold text */
+    font-size: 2em; /* Adjust size as needed */
+    margin-bottom: 20px; /* Add space below heading */
+}
