@@ -32,6 +32,13 @@
             width: 100%;
             text-align: center;
         }
+
+        .admin-login {
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +66,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Events" asp-action="Index">Events</a>
+                        </li>
+                    </ul>
+                    <!-- Admin Login Section -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Admin Login</a>
                         </li>
                     </ul>
                 </div>

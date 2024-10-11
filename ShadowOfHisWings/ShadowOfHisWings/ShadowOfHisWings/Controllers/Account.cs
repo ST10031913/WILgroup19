@@ -6,11 +6,11 @@ using ShadowOfHisWings.Models;
 namespace ShadowOfHisWings.Controllers
 {
     [Authorize(Policy = "AdminOnly")]
-    public class AccountController : Controller
+    public class Account : Controller
     {
         private readonly SignInManager<IdentityUser> _signInManager;
 
-        public AccountController(SignInManager<IdentityUser> signInManager)
+        public Account(SignInManager<IdentityUser> signInManager)
         {
             _signInManager = signInManager;
         }
