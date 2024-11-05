@@ -1,10 +1,138 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\",
+  "WorkspaceRootPath": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShadowOfHisWings.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\models\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\controllers\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\events\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\events\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\events\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\events\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\events\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\events\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\events\\manage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\events\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\controllers\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\events.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\donation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\donation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\controllers\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\shadowofhiswings.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\shadowofhiswings.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\models\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\liama\\source\\repos\\shadowofhiswings\\shadowofhiswings\\migrations\\20241030160109_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\migrations\\20241030160109_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +142,404 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Create.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Events\\Create.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Create.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Events\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T15:04:41.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Edit.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Events\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Edit.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Events\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T15:05:15.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Delete.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Events\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Delete.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Events\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-30T16:08:17.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Contact.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\Contact.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Contact.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\Contact.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:50:59.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAywDcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T15:19:08.295Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShadowOfHisWings.csproj.user",
-              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user",
-              "RelativeDocumentMoniker": "ShadowOfHisWings.csproj.user",
-              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user",
-              "RelativeToolTip": "ShadowOfHisWings.csproj.user",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-07-23T16:37:17.221Z",
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Contact.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Models\\Contact.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Contact.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Models\\Contact.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:51:32.454Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAAwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:46:14.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\SeedData.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Data\\SeedData.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:48:49.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:46:37.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Events\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Events\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:46:08.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Events.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Events.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\Events.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Events.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\Events.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAmwIMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:35:02.85Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Manage.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Manage.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Events\\Manage.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Events\\Manage.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Events\\Manage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T15:02:08.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Event.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Event.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Models\\Event.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Event.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Models\\Event.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:45:47.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-29T15:20:23.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Program.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Program.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Program.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:48:13.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20241030160109_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Migrations\\20241030160109_InitialCreate.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Migrations\\20241030160109_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Migrations\\20241030160109_InitialCreate.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Migrations\\20241030160109_InitialCreate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-30T16:01:09.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:35:39.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Donation.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\Donation.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Donation.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\Donation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T05:21:04.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Home.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Models\\Home.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Home.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Models\\Home.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:51:08.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:46:11.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ShadowOfHisWings.csproj",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\ShadowOfHisWings.csproj",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj",
+              "RelativeToolTip": "ShadowOfHisWings\\ShadowOfHisWings.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-29T14:46:07.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-23T03:35:43.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ShadowOfHisWings\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAIEAAAAAAAAAAABrwLoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-07-23T03:18:17.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Home\\About.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Home\\About.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:44:43.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Donation.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Models\\Donation.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\Donation.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Models\\Donation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T04:35:00.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:51:24.168Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:48:00.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAABrwGgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:44:50.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAABSwBgAAACFBAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T03:52:16.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:44:54.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:47:55.059Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:45:45.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:47:49.303Z"
             }
           ]
         }
