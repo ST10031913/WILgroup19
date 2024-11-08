@@ -1,10 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\",
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ShadowOfHisWings.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\controllers\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\controllers\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\views\\donation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\donation\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\data\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|c:\\users\\lab_services_student\\downloads\\shadowofhiswings\\shadowofhiswings\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E9C64B9D-1977-401D-A91B-66C131237834}|ShadowOfHisWings\\ShadowOfHisWings.csproj|solutionrelative:shadowofhiswings\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Contact.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\Contact.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Contact.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\Contact.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T12:29:44.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAwG0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:50:51.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Donation\\Index.cshtml",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAAwHkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T11:47:21.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:35:27.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\appsettings.json",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\appsettings.json",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\appsettings.json",
+              "RelativeToolTip": "ShadowOfHisWings\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-08T11:16:51.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Program.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Program.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Program.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAAgAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T14:48:13.023Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ShadowOfHisWings.csproj.user",
-              "DocumentMoniker": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user",
-              "RelativeDocumentMoniker": "ShadowOfHisWings.csproj.user",
-              "ToolTip": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\ShadowOfHisWings.csproj.user",
-              "RelativeToolTip": "ShadowOfHisWings.csproj.user",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
-              "WhenOpened": "2024-07-23T16:37:17.221Z",
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Donation.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Controllers\\Donation.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Controllers\\Donation.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Controllers\\Donation.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T05:21:04.866Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\SeedData.cs",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Data\\SeedData.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Data\\SeedData.cs",
+              "RelativeToolTip": "ShadowOfHisWings\\Data\\SeedData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T11:35:59.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\Downloads\\ShadowOfHisWings\\ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "ShadowOfHisWings\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-07-23T03:48:00.811Z"
             }
           ]
         }

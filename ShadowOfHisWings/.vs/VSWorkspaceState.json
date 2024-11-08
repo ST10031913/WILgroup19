@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ShadowOfHisWings",
+    "\\ShadowOfHisWings\\Views",
+    "\\ShadowOfHisWings\\Views\\Contact"
   ],
-  "SelectedNode": "\\ShadowOfHisWings.csproj.user",
+  "SelectedNode": "\\ShadowOfHisWings.sln",
   "PreviewInSolutionExplorer": false
 }
