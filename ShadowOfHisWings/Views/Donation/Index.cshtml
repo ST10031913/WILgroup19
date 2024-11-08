@@ -1,0 +1,121 @@
+﻿@model ShadowOfHisWings.Models.Donation
+
+@{
+    ViewBag.Title = "Donate";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5 donation-page">
+    <div class="header-section text-center text-white">
+        <h2>Support Our Recovery Centre</h2>
+        <p class="lead">
+            Your generosity helps us provide essential support and services to those in need of recovery and healing.
+            Every donation, no matter how small, makes a lasting difference.
+        </p>
+    </div>
+
+    <div class="card donation-card mx-auto">
+        <div class="card-body text-center">
+            <h5 class="card-title"><strong>Prefer to donate via bank transfer?</strong></h5>
+            <p class="card-text">
+                <strong>Bank:</strong> FNB<br>
+                <strong>Account Number:</strong> 63006321309<br>
+                <strong>Branch:</strong> 250655
+            </p>
+            <button class="btn btn-primary mt-3" onclick="downloadAccountDetails()">Download Account Details (PDF)</button>
+            <p class="text-muted mt-3">Thank you for your kind support. Together, we can make a lasting impact!</p>
+
+            <!-- PayPal Button -->
+            <button class="btn btn-paypal mt-4" onclick="redirectToPayPal()">
+                <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="PayPal Icon" class="paypal-icon">
+                Donate via PayPal
+            </button>
+        </div>
+    </div>
+
+    <!-- More Button and Menu -->
+    <div class="text-center mt-5 more-button-container">
+        <button class="btn btn-outline-light btn-more" onclick="toggleMenu()">More</button>
+        <div id="moreMenu" class="more-menu mt-3">
+            <a href="@Url.Action("Index", "Home")" class="d-block">Home</a>
+            <a href="@Url.Action("About", "Home")" class="d-block">About Us</a>
+            <a href="@Url.Action("Contact", "Home")" class="d-block">Contact Us</a>
+            <a href="@Url.Action("Index", "Events")" class="d-block">Events</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById('moreMenu');
+        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function downloadAccountDetails() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.setFontSize(16);
+        doc.text("Shadow of His Wings Recovery Centre", 10, 20);
+        doc.setFontSize(12);
+        doc.text("Bank Transfer Details", 10, 30);
+        doc.text("Bank: FNB", 10, 40);
+        doc.text("Account Number: 63006321309", 10, 50);
+        doc.text("Branch: 250655", 10, 60);
+        doc.text("Thank you for your support in making a difference!", 10, 80);
+
+        doc.save("Shadow_of_His_Wings_Donation_Details.pdf");
+    }
+
+    function redirectToPayPal() {
+        window.location.href = "https://www.paypal.com/donate?hosted_button_id=YOUR_PAYPAL_BUTTON_ID"; // Replace with your PayPal donation link
+    }
+</script>
+
+<style>
+    .paypal-icon {
+        width: 20px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    .btn-paypal {
+        background-color: #0070ba;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-paypal:hover {
+            background-color: #005c99;
+        }
+
+    /* Additional styles */
+    .donation-page {
+        background: url('https://example.com/path-to-background.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 20px;
+        color: #fff;
+    }
+
+    .header-section {
+        padding: 40px 20px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .donation-card {
+        background: rgba(255, 255, 255, 0.9);
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        border-radius: 8px;
+        width: 100%;
+        max-width: 500px;
+    }
+</style>
