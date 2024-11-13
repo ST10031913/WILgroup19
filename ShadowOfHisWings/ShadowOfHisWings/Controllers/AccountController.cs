@@ -27,18 +27,46 @@ namespace ShadowOfHisWings.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(string email, string password)
         {
+            if (string.IsNullOrWhiteSpace(email))
+            {
+                ModelState.AddModelError("email", "Email is required.");
+            }
+
+            if (string.IsNullOrWhiteSpace(password))
+            {
+                ModelState.AddModelError("password", "Password is required.");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+
             // Find the user by email
             var user = await _userManager.FindByEmailAsync(email);
-            if (user != null)
+            if (user == null)
             {
-                // Sign in the user
-                var result = await _signInManager.PasswordSignInAsync(user.UserName, password, false, false);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("Manage", "Events");
-                }
+                // Email not found
+                ModelState.AddModelError("password", "Invalid email or password.");
+                return View();
             }
-            ModelState.AddModelError("", "Invalid login attempt.");
+
+            // Attempt to sign in the user
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, password, isPersistent: false, lockoutOnFailure: false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Manage", "Events");
+            }
+            else if (result.IsLockedOut)
+            {
+                ModelState.AddModelError("password", "Account is locked. Please try again later.");
+            }
+            else
+            {
+                // Incorrect password
+                ModelState.AddModelError("password", "Invalid email or password.");
+            }
+
             return View();
         }
 
@@ -47,7 +75,6 @@ namespace ShadowOfHisWings.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
-            // Sign out the user
             await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }

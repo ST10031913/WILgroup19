@@ -1,27 +1,29 @@
-﻿using System;
+﻿
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShadowOfHisWings.Models
 {
     public class Contact
     {
-        public int Id { get; set; }
+        [Key] // This attribute is optional if the property name is 'Id' or 'ContactId'
+        public int Id { get; set; } // Primary Key
 
-        [Required]
-        [Display(Name = "First Name")]
+        [Required(ErrorMessage = "Please enter your name.")]
+        [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters.")]
         public string Name { get; set; }
 
-        [Required]
-        [Display(Name = "Last Name")]
-        public string Surname { get; set; }
-
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Please enter your email address.")]
+        [EmailAddress(ErrorMessage = "Invalid Email Address.")]
         public string Email { get; set; }
 
-        [Required]
-        public string Comment { get; set; }
+        [StringLength(150, ErrorMessage = "Subject cannot exceed 150 characters.")]
+        public string Subject { get; set; }
 
-        public DateTime DateCreated { get; set; } = DateTime.Now;
+        [Required(ErrorMessage = "Please enter your message.")]
+        [DataType(DataType.MultilineText)]
+        public string Message { get; set; }
+
+        public DateTime SubmittedOn { get; set; } = DateTime.UtcNow; // Optional: Timestamp
     }
 }

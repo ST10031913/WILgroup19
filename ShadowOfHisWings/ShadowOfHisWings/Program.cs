@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using ShadowOfHisWings.Data;
 using System;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore; 
+using ShadowOfHisWings.Services;
 
 namespace ShadowOfHisWings
 {
@@ -30,12 +30,15 @@ namespace ShadowOfHisWings
             // 3. Add controllers with views
             builder.Services.AddControllersWithViews();
 
-            // Enable detailed error messages in development
-            builder.Services.AddDatabaseDeveloperPageExceptionFilter(); // This method is now recognized
+            // 4. Enable detailed error messages in development
+            builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+
+            // 5. Register the Email Service in the DI container
+            builder.Services.AddScoped<IEmailService, EmailService>();
 
             var app = builder.Build();
 
-            // 4. Seed the database with admin user and role
+            // 6. Seed the database with admin user and role
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -55,7 +58,7 @@ namespace ShadowOfHisWings
             if (app.Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint(); // This method is now recognized
+                app.UseMigrationsEndPoint();
             }
             else
             {
@@ -69,7 +72,7 @@ namespace ShadowOfHisWings
 
             app.UseRouting();
 
-            // 5. Enable authentication and authorization
+            // 7. Enable authentication and authorization
             app.UseAuthentication();
             app.UseAuthorization();
 
@@ -81,4 +84,3 @@ namespace ShadowOfHisWings
         }
     }
 }
-

@@ -1,192 +1,588 @@
-/* Ensure full height layout */
+/*=====================================================
+1. Variables for Consistent Styling
+=====================================================*/
+:root {
+    --font-family: Arial, Helvetica, sans-serif;
+    --primary-color: #FFFFFF;
+    --secondary-color: #000000;
+    --accent-color: rgba(0, 0, 0, 0.6);
+    --text-shadow-color: rgba(0, 0, 0, 0.7);
+    --border-radius: 8px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    --heading-font-weight: 900;
+    --text-font-weight: 700;
+    --btn-hover-color: #444444;
+    --footer-bg-color: #343a40;
+    --footer-text-color: #ffffff;
+    --footer-accent-color: #ffc107;
+    --footer-hover-color: #e0a800;
+}
+
+/*=====================================================
+2. Global Styles
+=====================================================*/
 html, body {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-y: auto; /* Enable vertical scrolling */
+    font-family: var(--font-family);
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Background settings */
 body {
     background-image: url('/images/backgroud.jpg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-bottom: 60px; /* Add padding to avoid content being hidden by footer */
 }
 
-/* Center text horizontally */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+/*=====================================================
+3. Layout and Structure
+=====================================================*/
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    padding-top: 80px;
+}
+
 .text-center {
     text-align: center;
 }
 
-/* Center content horizontally and vertically */
 .vertical-center {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content horizontally */
-    min-height: 75vh; /* Adjust height as needed */
-    padding: 20px; /* Ensure content does not overflow */
-    box-sizing: border-box; /* Include padding in the element's total width */
+    justify-content: center;
+    min-height: 75vh;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Frame around text */
-.text-frame {
-    border: 2px solid #000000; /* Black border */
-    border-radius: 8px; /* Rounded corners */
-    padding: 20px; /* Space inside the frame */
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    box-sizing: border-box; /* Include padding and border in the element's total width */
-    margin: 10px; /* Add spacing around the frame */
+.section {
+    padding: 2rem 0;
+    margin-bottom: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
 
-    /* Darker and bolder text color for headings and paragraphs */
-    .text-frame h2,
-    .text-frame p {
-        color: #000000; /* Black color */
-        font-weight: bold; /* Makes text bold */
-    }
+/*=====================================================
+4. Typography
+=====================================================*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--heading-font-weight);
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px var(--text-shadow-color);
+}
 
-    .text-frame h2 {
-        font-weight: 900; /* More bold */
-    }
-
-    .text-frame p {
-        font-weight: 700; /* Regular bold */
-        color: #FFFFFF; /* White color */
-    }
-
-/* Button styles */
-.btn-custom {
-    margin-top: 20px;
-    padding: 10px 20px;
+p {
     font-size: 1.2em;
-    font-weight: bold;
-    color: #fff;
-    background-color: #000; /* Black background */
-    border: none;
+    font-weight: var(--text-font-weight);
+    color: var(--primary-color);
+}
+
+.text-frame h2 {
+    font-size: 2.5em;
+}
+
+.text-frame p {
+    font-size: 1.2em;
+}
+
+/*=====================================================
+5. Button Styles
+=====================================================*/
+.btn {
+    padding: 10px 20px;
     border-radius: 5px;
-    display: inline-block; /* Ensure buttons are displayed inline */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: var(--btn-hover-color);
+    }
+
+.btn-custom {
+    color: var(--primary-color);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
 }
 
     .btn-custom:hover {
-        background-color: #444; /* Darker background on hover */
+        background-color: rgba(0, 0, 0, 0.9);
     }
 
-/* Align buttons in a container */
 .btn-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px; /* Add space between buttons */
+    gap: 10px;
 }
 
-/* More button styles */
+    .btn-container .btn {
+        min-width: 150px;
+        margin: 15px 5px;
+    }
+
 .btn-more {
-    margin-top: 20px;
-    padding: 10px 20px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     font-size: 1.2em;
-    font-weight: bold;
-    color: #000;
-    background-color: #fff; /* White background */
-    border: 2px solid #000; /* Black border */
-    border-radius: 5px;
-    cursor: pointer;
-    display: block; /* Ensure button is block-level for better alignment */
-    text-align: center;
+    margin-top: 20px;
 }
 
     .btn-more:hover {
-        background-color: #f0f0f0; /* Light grey background on hover */
+        background-color: #f0f0f0;
     }
 
-/* Hidden menu styles */
+/*=====================================================
+6. Components and Sections
+=====================================================*/
+.text-frame {
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
+    text-shadow: 2px 2px 4px var(--text-shadow-color);
+    margin: 10px;
+}
+
 .more-menu {
-    display: none; /* Hide menu initially */
+    display: none;
     margin-top: 20px;
-    text-align: center; /* Center-align the menu items */
+    text-align: center;
 }
 
     .more-menu a {
-        display: block; /* Make links block-level for full-width clickable area */
+        display: block;
         margin: 10px 0;
         padding: 10px 20px;
-        font-size: 1.2em;
-        font-weight: bold;
-        color: #fff;
-        background-color: #000; /* Black background */
-        border: none;
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
         border-radius: 5px;
         text-decoration: none;
+        transition: background-color 0.3s ease;
     }
 
         .more-menu a:hover {
-            background-color: #444; /* Darker background on hover */
+            background-color: var(--accent-color);
         }
 
-/* Contact page specific styles */
-.contact-page .form-group {
-    margin-bottom: 20px; /* Add spacing between form fields */
+/*=====================================================
+7. Animations and Keyframes
+=====================================================*/
+.home-index-page .text-frame {
+    animation: fadeInSlideUp 1s ease-out forwards;
+    opacity: 0;
 }
 
-.contact-page .form-control {
-    font-weight: bold; /* Make text inside form controls bold */
-    color: #000; /* Ensure text is visible */
+.home-index-page .btn-custom {
+    animation: fadeInSlideUp 1.5s ease-out forwards;
+    opacity: 0;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.contact-page .form-control-lg {
-    margin-top: 10px; /* Add space above each text box */
-    margin-bottom: 10px; /* Add space below each text box */
+    .home-index-page .btn-custom:hover {
+        animation: pulse 0.6s infinite ease-in-out;
+    }
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.contact-page .btn-primary {
-    background-color: #000; /* Black background for button */
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/*=====================================================
+8. Responsive Layout
+=====================================================*/
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .section {
+        padding: 1.5rem 1rem;
+    }
+
+    .btn-container .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/*=====================================================
+9. Footer Styling
+=====================================================*/
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 10px 5px;
+    width: 100%;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer h5, .footer h6 {
+    color: var(--footer-accent-color);
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.footer p, .footer small, .footer a {
+    color: var(--footer-text-color);
+    font-size: 0.8em;
+}
+
+    .footer a:hover {
+        color: var(--footer-accent-color);
+    }
+
+.footer .footer-logo {
+    max-width: 80px;
+    margin-bottom: 5px;
+}
+
+.footer-links li {
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.footer-links a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85em;
+}
+
+    .footer-links a:hover {
+        color: var(--footer-accent-color);
+    }
+
+.footer-form input[type="email"] {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 6px;
     border: none;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 0.85em;
+}
+
+.footer-form button {
+    background-color: var(--footer-accent-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+}
+
+    .footer-form button:hover {
+        background-color: var(--footer-hover-color);
+    }
+
+.footer-social a {
+    color: #FFFFFF;
+    font-size: 0.9em;
+    margin-right: 6px;
+}
+
+    .footer-social a:hover {
+        color: var(--footer-accent-color);
+    }
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.75em;
+    color: #CCCCCC;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 5px;
+}
+
+/*=====================================================
+10. Navbar and Hamburger Menu Styling
+=====================================================*/
+.navbar {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    z-index: 10;
+    border: 2px solid #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-collapse {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*=====================================================
+11. Specific Sections Styling
+=====================================================*/
+/* Vision Section */
+.vision-section {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    border-radius: 8px; 
+}
+
+    .vision-section h2,
+    .vision-section p {
+        color: inherit;
+    }
+
+/* Core Values Section */
+.card {
+    border: none;
+    background-color: #f8f9fa;
+    transition: transform 0.3s;
+    color: #212529;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+.card-body {
+    color: #212529;
+}
+
+.card .card-title {
+    font-weight: bold;
+    color: #212529;
+}
+
+.card .card-text {
+    font-size: 0.95rem;
+    color: #212529;
+}
+
+.card i {
+    color: #007bff;
+}
+
+/*=====================================================
+12. Specific Form Sections Styling
+=====================================================*/
+/* Contact and Login Sections */
+.contact-section, .login-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    padding: 60px 0;
+}
+
+    .contact-section h2,
+    .contact-section p,
+    .contact-section .form-label,
+    .login-section h2,
+    .login-section .form-label {
+        color: #ffffff;
+    }
+
+.transparent-input {
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+    .transparent-input::placeholder {
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    .transparent-input:focus {
+        background-color: #ffffff;
+        outline: none;
+    }
+
+/*=====================================================
+13. Testimonials Section
+=====================================================*/
+#testimonialCarousel {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--primary-color);
+    padding: 30px 15px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+.testimonial-item {
+    padding: 20px;
+    color: #fff;
+}
+
+.testimonial-content p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.testimonial-author h5 {
     font-weight: bold;
 }
 
-    .contact-page .btn-primary:hover {
-        background-color: #444; /* Darker background on hover */
+.testimonial-author small {
+    color: #ddd;
+    font-size: 0.85rem;
+}
+
+/* Carousel Control Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.video-testimonials-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    color: var(--primary-color);
+}
+
+.video-container {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+    .video-container iframe {
+        border-radius: 8px;
     }
 
-/* Auto-expand textarea */
-.auto-expand {
-    overflow: hidden; /* Hide scrollbars */
-    resize: none; /* Prevent manual resizing */
+    /*=====================================================
+14. Media Styling
+=====================================================*/
+    .video-container iframe {
+        border-radius: 8px;
+        box-shadow: var(--box-shadow);
+    }
+
+.img-fluid {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 8px;
 }
 
-/* Contact page specific styles */
-.contact-page .form-group label {
-    color: #000; /* Dark black color */
-    font-weight: bold; /* Make text bold */
+/*=====================================================
+15. Donation Page Styling
+=====================================================*/
+.donation-page h1, .section-title {
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-/* Ensure the Contact Us heading is styled like other headings */
-.contact-page h2 {
-    color: #000; /* Dark black color */
-    font-weight: 900; /* Make text very bold */
-    font-size: 2em; /* Adjust size if needed */
-    margin-bottom: 20px; /* Add space below heading */
+.donation-hero {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 3rem 1rem;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #007bff;
 }
 
-/* Donation page specific styles */
-.donation-page h2 {
-    color: #000; /* Dark black color */
-    font-weight: 900; /* Very bold text */
-    font-size: 2em; /* Adjust size if needed */
-    margin-bottom: 20px; /* Add space below heading */
+.why-donate-section .benefit-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
 
-.donation-page p {
-    color: #000; /* Dark black color */
-    font-weight: bold; /* Bold text */
-    font-size: 1.2em; /* Adjust size if needed */
+    .why-donate-section .benefit-box h5 {
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .why-donate-section .benefit-box p {
+        color: #ffffff;
+    }
+
+    .why-donate-section .benefit-box:hover {
+        transform: translateY(-5px);
+    }
+
+#bank-details .section-title {
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
-/* General heading styles */
-Events-page h2 {
-    color: #000; /* Dark black color */
-    font-weight: 900; /* Very bold text */
-    font-size: 2em; /* Adjust size as needed */
-    margin-bottom: 20px; /* Add space below heading */
+.bank-details-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFFFFF;
+    width: fit-content;
 }
+
+.paypal-btn {
+    background-color: #003087;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+    .paypal-btn:hover {
+        background-color: #005ea6;
+    }
