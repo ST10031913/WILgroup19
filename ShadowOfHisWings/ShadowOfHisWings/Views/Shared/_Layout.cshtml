@@ -6,69 +6,51 @@
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-..." crossorigin="anonymous" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
     @RenderSection("Styles", required: false)
 </head>
 <body class="d-flex flex-column min-vh-100">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Page Content -->
     <header>
         <nav class="navbar navbar-light bg-transparent border-bottom box-shadow fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="@Url.Action("Index", "Home")">Shadow Of His Wings</a>
                 <!-- Hamburger button -->
-                <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" onclick="toggleMenu()">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
                 </button>
 
-                <!-- Collapsible Menu -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Home")">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("About", "Home")">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Programs")">Programs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Events")">Events</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Testimonials")">Testimonials</a>
-                        </li>
-                        <!-- New Media section -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Media")">Media</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Donation")">Donate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="@Url.Action("Index", "Contact")">Contact</a>
-                        </li>
+                <!-- Collapsible Sidebar Menu -->
+                <div id="sidebarMenu" class="collapse-navbar">
+                    <ul>
+                        <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                        <li><a href="@Url.Action("Index", "Programs")">Programs</a></li>
+                        <li><a href="@Url.Action("Index", "Events")">Events</a></li>
+                        <li><a href="@Url.Action("Index", "Testimonials")">Testimonials</a></li>
+                        <li><a href="@Url.Action("Index", "Media")">Media</a></li>
+                        <li><a href="@Url.Action("Index", "Donation")">Donate</a></li>
+                        <li><a href="@Url.Action("Index", "Contact")">Contact</a></li>
                         <!-- Admin Links -->
                         @if (User.IsInRole("Admin"))
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Manage", "Events")">Manage Events</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Manage", "Testimonials")">Manage Testimonials</a>
-                            </li>
-                            <li class="nav-item">
+                            <li><a href="@Url.Action("Manage", "Events")">Manage Events</a></li>
+                            <li><a href="@Url.Action("Manage", "Testimonials")">Manage Testimonials</a></li>
+                            <li><a href="@Url.Action("Manage", "Media")">Manage Media</a></li>
+                            <li>
                                 <form id="logoutForm" asp-controller="Account" asp-action="Logout" method="post">
                                     @Html.AntiForgeryToken()
-                                    <button type="submit" class="nav-link btn btn-link" style="display: inline; cursor: pointer;">Logout</button>
+                                    <button type="submit" class="nav-link btn btn-link text-white" style="display: inline; cursor: pointer;">Logout</button>
                                 </form>
                             </li>
                         }
                         else
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" href="@Url.Action("Login", "Account")">Admin Login</a>
-                            </li>
+                            <li><a href="@Url.Action("Login", "Account")">Admin Login</a></li>
                         }
                     </ul>
                 </div>
@@ -104,13 +86,9 @@
                     </ul>
                 </div>
 
-                <!-- Subscription and Social Links -->
+                <!-- Social Links -->
                 <div class="col-md-4">
-                    <h5>Stay Connected</h5>
-                    <form action="#" method="post" class="footer-form d-flex flex-column flex-md-row mb-1">
-                        <input type="email" name="email" placeholder="Email" required class="footer-input form-control me-md-2 mb-1 mb-md-0" style="max-width: 150px;">
-                        <button type="submit" class="footer-submit-btn btn btn-warning">Submit</button>
-                    </form>
+                    <h5>Follow Us</h5>
                     <div class="footer-social mt-1">
                         <a href="#" class="text-light me-1"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="text-light me-1"><i class="fab fa-instagram"></i></a>
@@ -119,14 +97,14 @@
                 </div>
             </div>
             <div class="text-center mt-1 footer-bottom">
-                <small>&copy; @DateTime.Now.Year - Your Company</small>
+                <small>&copy; @DateTime.Now.Year - Shadow Of His Wings</small>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
-

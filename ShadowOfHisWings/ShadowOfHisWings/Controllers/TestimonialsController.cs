@@ -20,6 +20,7 @@ namespace ShadowOfHisWings.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
+            // Only fetch approved testimonials
             var testimonials = _context.Testimonials
                 .Where(t => t.IsApproved)
                 .OrderByDescending(t => t.DateCreated)
@@ -31,6 +32,7 @@ namespace ShadowOfHisWings.Controllers
         [Authorize(Roles = "Admin")]
         public IActionResult Manage()
         {
+            // Fetch all testimonials for management
             var testimonials = _context.Testimonials
                 .OrderByDescending(t => t.DateCreated)
                 .ToList();
@@ -115,6 +117,7 @@ namespace ShadowOfHisWings.Controllers
                 _context.Testimonials.Remove(testimonial);
                 await _context.SaveChangesAsync();
             }
+            // Redirect to the Manage view instead of Index, to avoid unintended side effects
             return RedirectToAction(nameof(Manage));
         }
     }

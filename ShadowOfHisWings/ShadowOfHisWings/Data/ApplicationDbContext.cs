@@ -15,5 +15,6 @@ namespace ShadowOfHisWings.Data
         public DbSet<Event> Events { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<Media> Media { get; set; }
     }
 }

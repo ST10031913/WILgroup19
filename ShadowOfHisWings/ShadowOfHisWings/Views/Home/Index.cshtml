@@ -95,36 +95,30 @@
             </div>
         </div>
 
-        <!-- Gallery Section -->
+        
+        <!-- Dynamic Gallery Section -->
         <div class="container text-center py-5">
             <h2>Gallery</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <img src="~/images/sample1.jpg" alt="Gallery Image 1" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="~/images/sample2.jpg" alt="Gallery Image 2" class="img-fluid rounded">
-                </div>
-                <div class="col-md-4 mb-4">
-                    <img src="~/images/sample3.jpg" alt="Gallery Image 3" class="img-fluid rounded">
-                </div>
+                @foreach (var image in Model.LatestImages)
+                {
+                    <div class="col-md-4 mb-4">
+                        <img src="@image.ImagePath" alt="@image.Title" class="img-fluid rounded">
+                    </div>
+                }
             </div>
         </div>
 
-        <!-- Partners Section -->
-        <div class="container py-5">
-            <h2 class="text-center mb-5">Our Partners</h2>
-            <div class="row text-center">
-                <div class="col-md-2 col-4 mb-4">
-                    <img src="~/images/partner1.png" alt="Partner 1" class="img-fluid">
-                </div>
-                <div class="col-md-2 col-4 mb-4">
-                    <img src="~/images/partner2.png" alt="Partner 2" class="img-fluid">
-                </div>
-                <!-- Add more partner logos as needed -->
+        <!-- Success Stories Section -->
+        <div class="container text-center py-5">
+            <div class="text-frame">
+            <h2 class="mb-3">Testimonials</h2>
+            <p class="lead font-italic mb-4">
+                "Recovery is not a destination; it is a journey of self-discovery and resilience."
+            </p>
+            <a href="@Url.Action("Index", "Testimonials")" class="btn btn-primary btn-lg">Read Our Success Stories</a>
             </div>
         </div>
-    </div>
 
     <!-- Optional JavaScript -->
     <!-- Bootstrap 5 JS -->

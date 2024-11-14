@@ -20,25 +20,27 @@
 </head>
 <body>
     <div class="main-content container my-5">
-        <h2 class="text-center mb-4">@ViewBag.Title</h2>
+        <h2 class="text-center mb-4" style="color: #ffffff;">@ViewBag.Title</h2>
 
         @if (!Model.Any())
         {
-            <p class="text-center">No events are currently scheduled.</p>
+            <p class="no-events">No events are currently scheduled.</p>
         }
         else
         {
-            <ul class="list-group">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 @foreach (var evt in Model)
                 {
-                    <li class="list-group-item mb-3">
-                        <h3 class="fw-bold">@evt.Title</h3>
-                        <p>@evt.Description</p>
-                        <p><strong>Date:</strong> @evt.EventDate.ToString("MMMM dd, yyyy")</p>
-                        <p><strong>Location:</strong> @evt.Location</p>
-                    </li>
+                    <div class="col">
+                        <div class="event-card h-100">
+                            <h3 class="event-title">@evt.Title</h3>
+                            <p class="event-description">@evt.Description</p>
+                            <p class="event-date"><strong>Date:</strong> @evt.EventDate.ToString("MMMM dd, yyyy")</p>
+                            <p class="event-location"><strong>Location:</strong> @evt.Location</p>
+                        </div>
+                    </div>
                 }
-            </ul>
+            </div>
         }
     </div>
 

@@ -13,8 +13,32 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\2b97d5f6-c8a8-4601-a34c-f21f8d6f969b_IMG-20241112-WA0003.jpg",
+      "PackagePath": "staticwebassets\\images\\2b97d5f6-c8a8-4601-a34c-f21f8d6f969b_IMG-20241112-WA0003.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\6fabaab0-fde2-410b-9a44-15f8e57588f1_adps12.png",
+      "PackagePath": "staticwebassets\\images\\6fabaab0-fde2-410b-9a44-15f8e57588f1_adps12.png"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\71894602-8059-4b5a-a866-ac94cfb65cac_adps13.png",
+      "PackagePath": "staticwebassets\\images\\71894602-8059-4b5a-a866-ac94cfb65cac_adps13.png"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\75cdb0d2-7fb6-46b9-b27b-f6c47c96499e_IMG-20241112-WA0003.jpg",
+      "PackagePath": "staticwebassets\\images\\75cdb0d2-7fb6-46b9-b27b-f6c47c96499e_IMG-20241112-WA0003.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\9225a6a4-1474-4a14-84e5-0595bc19e421_IMG-20241112-WA0010.jpg",
+      "PackagePath": "staticwebassets\\images\\9225a6a4-1474-4a14-84e5-0595bc19e421_IMG-20241112-WA0010.jpg"
+    },
+    {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\backgroud.jpg.jpg",
       "PackagePath": "staticwebassets\\images\\backgroud.jpg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\c020e240-4cbf-4e6e-9310-61d53ae88f66_IMG-20241112-WA0011.jpg",
+      "PackagePath": "staticwebassets\\images\\c020e240-4cbf-4e6e-9310-61d53ae88f66_IMG-20241112-WA0011.jpg"
     },
     {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\js\\site.js",
@@ -247,6 +271,18 @@
     {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\uploads\\05556537-0e09-447c-8605-a6110f379bfe_IMG-20241112-WA0011.jpg",
+      "PackagePath": "staticwebassets\\uploads\\05556537-0e09-447c-8605-a6110f379bfe_IMG-20241112-WA0011.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\uploads\\165e5763-744a-49f5-9ee7-432ede3e3dc1_IMG-20241112-WA0004.jpg",
+      "PackagePath": "staticwebassets\\uploads\\165e5763-744a-49f5-9ee7-432ede3e3dc1_IMG-20241112-WA0004.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\uploads\\bd97db0d-10af-432f-bef1-685027bb119a_adps12.png",
+      "PackagePath": "staticwebassets\\uploads\\bd97db0d-10af-432f-bef1-685027bb119a_adps12.png"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ShadowOfHisWings.Microsoft.AspNetCore.StaticWebAssets.props",
