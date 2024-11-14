@@ -375,21 +375,18 @@ p {
 /*=====================================================
 11. Specific Sections Styling
 =====================================================*/
-/* Vision Section */
 .vision-section {
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     padding: 60px 0;
     text-align: center;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
 
-    .vision-section h2,
-    .vision-section p {
+    .vision-section h2, .vision-section p {
         color: inherit;
     }
 
-/* Core Values Section */
 .card {
     border: none;
     background-color: #f8f9fa;
@@ -422,18 +419,14 @@ p {
 /*=====================================================
 12. Specific Form Sections Styling
 =====================================================*/
-/* Contact and Login Sections */
 .contact-section, .login-section {
     background-color: rgba(0, 0, 0, 0.6);
     color: #ffffff;
     padding: 60px 0;
 }
 
-    .contact-section h2,
-    .contact-section p,
-    .contact-section .form-label,
-    .login-section h2,
-    .login-section .form-label {
+    .contact-section h2, .contact-section p, .contact-section .form-label,
+    .login-section h2, .login-section .form-label {
         color: #ffffff;
     }
 
@@ -486,9 +479,7 @@ p {
     font-size: 0.85rem;
 }
 
-/* Carousel Control Styling */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev-icon, .carousel-control-next-icon {
     background-color: #333;
     border-radius: 50%;
 }
@@ -587,27 +578,26 @@ p {
         background-color: #005ea6;
     }
 
-
-/* Preloader styling */
-
+/*=====================================================
+16. Preloader Styling
+=====================================================*/
 #preloader {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ffffff; /* Background color for the preloader */
+    background-color: #ffffff;
     z-index: 9999;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Spinner animation */
 .spinner {
     width: 40px;
     height: 40px;
-    border: 4px solid #007bff; /* Adjust color to match your theme */
+    border: 4px solid #007bff;
     border-top: 4px solid transparent;
     border-radius: 50%;
     animation: spin 0.8s linear infinite;
@@ -623,23 +613,46 @@ p {
     }
 }
 
+/*=====================================================
+17. Gallery and Media Styling
+=====================================================*/
 .gallery-image {
     width: 100%;
-    height: 300px; /* Set a fixed height */
-    object-fit: cover; /* Ensures the image covers the container without distortion */
-    border-radius: 10px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for better appearance */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
 
-/* Custom styling for event cards events */
+.gallery-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .gallery-image-container:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+/*=====================================================
+18. Event Cards Styling
+=====================================================*/
 .event-card {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
-    color: #ffffff; /* White text color */
+    color: #ffffff;
 }
 
     .event-card:hover {
@@ -664,7 +677,9 @@ p {
     font-size: 1.2rem;
 }
 
-/* Page title and description styling */
+/*=====================================================
+19. Page Title and Description Styling
+=====================================================*/
 .page-title {
     color: #ffffff;
     font-size: 2.5rem;
@@ -682,7 +697,29 @@ p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Video grid styling */
+/*=====================================================
+20. Back Button Styling
+=====================================================*/
+.back-button {
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: relative;
+    top: -10px;
+    margin-bottom: 10px;
+}
+
+    .back-button:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+/*=====================================================
+21. Video Grid Styling
+=====================================================*/
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -711,97 +748,9 @@ p {
         border-radius: 15px;
     }
 
-/* Back button styling */
-.back-button {
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    position: relative;
-    top: -10px;
-    margin-bottom: 10px;
-}
-
-    .back-button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
-/* Back button styling */
-.back-button {
-    font-size: 1rem;
-    margin-top: 10px;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-    .back-button:hover {
-        background-color: rgba(255, 255, 255, 0.4);
-    }
-
-
-/* Page title and description styling */
-.page-title {
-    color: #ffffff;
-    font-size: 2.5rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-}
-
-.lead-text {
-    color: #e0e0e0;
-    font-size: 1.2rem;
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-/* Gallery grid styling */
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery-image-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-    .gallery-image-container:hover {
-        transform: scale(1.05);
-        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
-    }
-
-.gallery-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-}
-
-/* Back button styling */
-.back-button {
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
+/*=====================================================
+22. Main Content and Button Container Styling
+=====================================================*/
 .main-content {
     text-align: center;
     padding: 100px 0;
@@ -833,34 +782,13 @@ h2 {
     transition: background-color 0.3s;
 }
 
-    .btn-primary:hover {
-        background-color: #ff5a47;
-    }
-
     .btn-secondary:hover {
         background-color: #5a6268;
     }
 
-    .video-container {
-    position: relative;
-    border-radius: 8px;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.6); /* Slight background for contrast */
-    color: #ffffff; /* White text color */
-    padding: 15px;
-    transition: transform 0.3s ease;
-}
-
-.video-container:hover {
-    transform: scale(1.05);
-}
-
-.video-container p {
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* Hamburger Icon Style */
+/*=====================================================
+23. Hamburger Icon and Sidebar Menu Styling
+=====================================================*/
 .navbar-toggler {
     border: none;
 }
@@ -870,7 +798,6 @@ h2 {
     font-size: 24px;
 }
 
-/* Sidebar Menu Style */
 .collapse-navbar {
     position: fixed;
     top: 0;
@@ -884,28 +811,26 @@ h2 {
     z-index: 1000;
 }
 
- .collapse-navbar.show {
-        transform: translateX(0);
+.collapse-navbar.show {
+ transform: translateX(0);
     }
 
- /* Menu Links Styling */
  .collapse-navbar ul {
-        list-style: none;
-        padding: 1rem;
+list-style: none;
+padding: 1rem;
     }
 
- .collapse-navbar ul li {
-  padding: 0.5rem 0;
-  text-align: center;
+.collapse-navbar ul li {
+ padding: 0.5rem 0;
+ text-align: center;
         }
 
 .collapse-navbar ul li a {
  color: white;
  font-size: 18px;
- text-decoration: none;
-  }
+text-decoration: none;
+       }
 
-    .collapse-navbar ul li a:hover {
-        color: #0056b3;
-    }
-
+.collapse-navbar ul li a:hover {
+color: #0056b3;
+}

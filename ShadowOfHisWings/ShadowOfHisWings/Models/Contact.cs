@@ -1,13 +1,12 @@
-﻿
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace ShadowOfHisWings.Models
 {
     public class Contact
     {
-        [Key] // This attribute is optional if the property name is 'Id' or 'ContactId'
-        public int Id { get; set; } // Primary Key
+        [Key]
+        public int Id { get; set; }
 
         [Required(ErrorMessage = "Please enter your name.")]
         [StringLength(100, ErrorMessage = "Name cannot exceed 100 characters.")]
@@ -24,6 +23,6 @@ namespace ShadowOfHisWings.Models
         [DataType(DataType.MultilineText)]
         public string Message { get; set; }
 
-        public DateTime SubmittedOn { get; set; } = DateTime.UtcNow; // Optional: Timestamp
+        public DateTime SubmittedOn { get; set; } = DateTime.UtcNow;
     }
 }

@@ -2,7 +2,6 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Preloader functionality
-// Preloader functionality
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     setTimeout(() => {

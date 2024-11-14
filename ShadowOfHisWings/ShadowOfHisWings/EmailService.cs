@@ -1,9 +1,8 @@
-﻿// Services/EmailService.cs
-using Microsoft.Extensions.Configuration;
-using ShadowOfHisWings.Models;
-using System.Net;
+﻿using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using ShadowOfHisWings.Models;
 
 namespace ShadowOfHisWings.Services
 {
@@ -18,33 +17,27 @@ namespace ShadowOfHisWings.Services
 
         public async Task SendContactEmailAsync(Contact contact)
         {
-            var emailSettings = _configuration.GetSection("EmailSettings");
-
-            var smtpHost = emailSettings.GetValue<string>("SmtpHost");
-            var smtpPort = emailSettings.GetValue<int>("SmtpPort");
-            var smtpUser = emailSettings.GetValue<string>("SmtpUser");
-            var smtpPass = emailSettings.GetValue<string>("SmtpPass");
-            var fromEmail = emailSettings.GetValue<string>("FromEmail");
-            var toEmail = emailSettings.GetValue<string>("ToEmail");
+            var smtpClient = new SmtpClient
+            {
+                Host = _configuration["Smtp:Server"],
+                Port = int.Parse(_configuration["Smtp:Port"]),
+                EnableSsl = bool.Parse(_configuration["Smtp:EnableSsl"]),
+                Credentials = new NetworkCredential(
+                    _configuration["Smtp:SenderEmail"],
+                    _configuration["Smtp:SenderPassword"])
+            };
 
             var mailMessage = new MailMessage
             {
-                From = new MailAddress(fromEmail),
-                Subject = contact.Subject ?? "New Contact Us Message",
-                Body = $"<p><strong>Name:</strong> {contact.Name}</p>" +
-                       $"<p><strong>Email:</strong> {contact.Email}</p>" +
-                       $"<p><strong>Message:</strong> {contact.Message}</p>",
-                IsBodyHtml = true
+                From = new MailAddress(_configuration["Smtp:SenderEmail"]),
+                Subject = contact.Subject, // Use the subject from the contact form
+                Body = $"Name: {contact.Name}\nEmail: {contact.Email}\nMessage: {contact.Message}",
+                IsBodyHtml = false,
             };
 
-            mailMessage.To.Add(new MailAddress(toEmail));
+            mailMessage.To.Add(_configuration["Smtp:RecipientEmail"]);
 
-            using (var smtpClient = new SmtpClient(smtpHost, smtpPort))
-            {
-                smtpClient.Credentials = new NetworkCredential(smtpUser, smtpPass);
-                smtpClient.EnableSsl = false; 
-                await smtpClient.SendMailAsync(mailMessage);
-            }
+            await smtpClient.SendMailAsync(mailMessage);
         }
     }
 }

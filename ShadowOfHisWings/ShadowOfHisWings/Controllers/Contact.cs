@@ -1,5 +1,4 @@
-﻿// Controllers/ContactController.cs
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using ShadowOfHisWings.Data;
 using ShadowOfHisWings.Models;
 using ShadowOfHisWings.Services;
