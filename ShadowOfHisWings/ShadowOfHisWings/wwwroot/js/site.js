@@ -13,25 +13,32 @@ window.addEventListener("load", function () {
 });
 
 
-// Media type toggle for Create and Edit views
+/// Media type toggle for Create and Edit views
 document.addEventListener("DOMContentLoaded", function () {
     const mediaTypeDropdown = document.getElementById("mediaTypeDropdown");
-    const videoUrlSection = document.getElementById("videoUrlSection");
-    const imageUploadSection = document.getElementById("imageUploadSection");
+    const videoUrlSection = document.getElementById("urlField");
+    const imageUploadSection = document.getElementById("imageField");
+    const categoryField = document.getElementById("categoryField");
 
-    // Function to toggle the visibility based on selected media type
-    function toggleMediaFields() {
-        const isImage = mediaTypeDropdown.value === "Image";
-        videoUrlSection.style.display = isImage ? "none" : "block";
-        imageUploadSection.style.display = isImage ? "block" : "none";
+    if (mediaTypeDropdown && videoUrlSection && imageUploadSection && categoryField) {
+        function toggleMediaFields() {
+            const isImage = mediaTypeDropdown.value === "Image";
+            const isVideo = mediaTypeDropdown.value === "Video";
+
+            // Adjust visibility of sections based on the selected media type
+            videoUrlSection.style.display = isVideo ? "block" : "none";
+            imageUploadSection.style.display = isImage || isVideo ? "block" : "none";
+            categoryField.style.display = isImage ? "block" : "none";
+        }
+
+        // Initial field state
+        toggleMediaFields();
+
+        // Listen for changes in the dropdown
+        mediaTypeDropdown.addEventListener("change", toggleMediaFields);
     }
-
-    // Initial toggle based on the current value
-    toggleMediaFields();
-
-    // Add event listener for dropdown change
-    mediaTypeDropdown.addEventListener("change", toggleMediaFields);
 });
+
 
 function toggleMenu() {
     const sidebarMenu = document.getElementById("sidebarMenu");

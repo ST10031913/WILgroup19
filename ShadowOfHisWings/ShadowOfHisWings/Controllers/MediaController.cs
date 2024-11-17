@@ -34,6 +34,7 @@ namespace ShadowOfHisWings.Controllers
 
         public IActionResult Create()
         {
+            var media = new Media();
             return View();
         }
 
@@ -43,6 +44,13 @@ namespace ShadowOfHisWings.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Only validate category if it's an image
+                if (media.Type == "Image" && string.IsNullOrWhiteSpace(media.Category))
+                {
+                    ModelState.AddModelError("Category", "Category is required for images.");
+                    return View(media);
+                }
+
                 if (media.Type == "Image" && ImageFile != null)
                 {
                     // Process image upload
@@ -98,45 +106,81 @@ namespace ShadowOfHisWings.Controllers
                     return NotFound();
                 }
 
+                // Update common properties
                 existingMedia.Title = media.Title;
                 existingMedia.Type = media.Type;
                 existingMedia.Url = media.Type == "Video" ? media.Url : null;
 
-                if (media.Type == "Image" && ImageFile != null)
+                // For images, validate the category and handle file upload
+                if (media.Type == "Image")
                 {
-                    // Delete old image if there is one
-                    if (!string.IsNullOrEmpty(existingMedia.ImagePath))
+                    if (string.IsNullOrWhiteSpace(media.Category))
                     {
-                        string oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, existingMedia.ImagePath.TrimStart('/'));
-                        if (System.IO.File.Exists(oldImagePath))
+                        ModelState.AddModelError("Category", "Category is required for images.");
+                        return View(media);
+                    }
+
+                    existingMedia.Category = media.Category;
+
+                    if (ImageFile != null)
+                    {
+                        // Delete old image if it exists
+                        if (!string.IsNullOrEmpty(existingMedia.ImagePath))
                         {
-                            System.IO.File.Delete(oldImagePath);
+                            string oldImagePath = Path.Combine(_webHostEnvironment.WebRootPath, existingMedia.ImagePath.TrimStart('/'));
+                            if (System.IO.File.Exists(oldImagePath))
+                            {
+                                System.IO.File.Delete(oldImagePath);
+                            }
                         }
-                    }
 
-                    // Upload new image
-                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
-                    string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
-                    string filePath = Path.Combine(uploadsFolder, uniqueFileName);
+                        // Upload new image
+                        string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "images");
+                        string uniqueFileName = Guid.NewGuid().ToString() + "_" + ImageFile.FileName;
+                        string filePath = Path.Combine(uploadsFolder, uniqueFileName);
 
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        await ImageFile.CopyToAsync(fileStream);
+                        using (var fileStream = new FileStream(filePath, FileMode.Create))
+                        {
+                            await ImageFile.CopyToAsync(fileStream);
+                        }
+                        existingMedia.ImagePath = "/images/" + uniqueFileName;
                     }
-                    existingMedia.ImagePath = "/images/" + uniqueFileName;
+                }
+                else
+                {
+                    // Clear category for videos
+                    existingMedia.Category = null;
                 }
 
                 _context.Update(existingMedia);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Manage));
             }
+
             return View(media);
         }
 
-        // POST: Media/Delete/5
-        [HttpPost]
+        // GET: Media/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var media = await _context.Media.FindAsync(id);
+            if (media == null)
+            {
+                return NotFound();
+            }
+
+            return View(media); // This shows the delete confirmation view
+        }
+
+        // POST: Media/DeleteConfirmed/5
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var media = await _context.Media.FindAsync(id);
             if (media == null)
@@ -158,6 +202,8 @@ namespace ShadowOfHisWings.Controllers
             return RedirectToAction(nameof(Manage));
         }
 
+
+
         public IActionResult Videos()
         {
             var videos = _context.Media.Where(m => m.Type == "Video").ToList();
@@ -166,8 +212,13 @@ namespace ShadowOfHisWings.Controllers
 
         public IActionResult Gallery()
         {
-            var images = _context.Media.Where(m => m.Type == "Image").ToList();
-            return View(images);
+            var viewModel = new GalleryViewModel
+            {
+                EventsImages = _context.Media.Where(m => m.Category == "Event" && m.Type == "Image").ToList(),
+                FacilityImages = _context.Media.Where(m => m.Category == "Facility" && m.Type == "Image").ToList()
+            };
+
+            return View(viewModel);
         }
     }
 }

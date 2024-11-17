@@ -564,19 +564,36 @@ p {
     width: fit-content;
 }
 
+.separation-top {
+    margin-top: 130px; 
+}
+
 .paypal-btn {
-    background-color: #003087;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    color: #fff;
+    background-color: #0070ba;
+    border-color: #0070ba;
     text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
 }
 
     .paypal-btn:hover {
-        background-color: #005ea6;
+        background-color: #005c99;
+        border-color: #005c99;
+        color: #fff;
+        text-decoration: none;
     }
+
+    .paypal-btn img {
+        height: 24px;
+        margin-right: 8px;
+    }
+
+.mt-custom {
+    margin-top: 140px; /* Adjust the value as needed */
+}
+
+
 
 /*=====================================================
 16. Preloader Styling
@@ -834,3 +851,75 @@ text-decoration: none;
 .collapse-navbar ul li a:hover {
 color: #0056b3;
 }
+
+#categoryField {
+    display: none; /* Default hidden */
+}
+
+
+.overlay-box {
+    background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Make the counselor-card background transparent */
+.counselor-card {
+    background-color: transparent;
+    border: none; /* Remove border if you don't want it */
+}
+
+
+/* Make the card-body background transparent */
+.counselor-card .card-body {
+    background-color: transparent;
+}
+
+/* Adjust the text-muted class for better visibility */
+.counselor-card .text-muted {
+    color: #ccc !important;
+}
+
+.counselor-img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f0f0f0; 
+}
+
+.rounded-circle {
+    border-radius: 60% !important;
+}
+
+.counselor-card .card-title,
+.counselor-card .card-subtitle,
+.counselor-card .card-text,
+.counselor-card .text-muted {
+    color: white !important;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.counselor-card .card-subtitle {
+    font-size: 16px;
+    color: #ccc !important;
+}
+
+.counselor-card .card-text {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 0 15px;
+    /* Remove text limiting properties */
+}
+
+/* Optional: Flex settings for equal card heights */
+.row.justify-content-center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+

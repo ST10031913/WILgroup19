@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ShadowOfHisWings.Models.Media>
+﻿@model ShadowOfHisWings.Models.GalleryViewModel
 
 @{
     ViewBag.Title = "Gallery";
@@ -10,13 +10,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title - Shadow Of His Wings</title>
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
+
 </head>
 <body>
     <!-- Main Content -->
@@ -28,16 +25,46 @@
 
         <!-- Page Title and Description -->
         <h2 class="page-title">@ViewBag.Title</h2>
-        <p class="lead-text">Explore our gallery capturing memorable moments from our journey.</p>
+        <p class="lead-text">Explore our gallery capturing memorable moments from our events and our facilities.</p>
 
-        <!-- Gallery Grid -->
-        <div class="gallery-grid">
-            @foreach (var image in Model.Where(m => m.Type == "Image"))
-            {
-                <div class="gallery-image-container">
-                    <img src="@image.ImagePath" class="gallery-image" alt="@image.Title" />
-                </div>
-            }
+        <!-- Events Section -->
+        <div class="py-5">
+            <h3 class="text-center mb-4">Event Images</h3>
+            <div class="gallery-grid">
+                @if (Model.EventsImages != null && Model.EventsImages.Any())
+                {
+                    @foreach (var image in Model.EventsImages)
+                    {
+                        <div class="gallery-image-container">
+                            <img src="@image.ImagePath" class="gallery-image" alt="@image.Title" />
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No event images available.</p>
+                }
+            </div>
+        </div>
+
+        <!-- Facility Section -->
+        <div class="py-5">
+            <h3 class="text-center mb-4">Facility Images</h3>
+            <div class="gallery-grid">
+                @if (Model.FacilityImages != null && Model.FacilityImages.Any())
+                {
+                    @foreach (var image in Model.FacilityImages)
+                    {
+                        <div class="gallery-image-container">
+                            <img src="@image.ImagePath" class="gallery-image" alt="@image.Title" />
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p>No facility images available.</p>
+                }
+            </div>
         </div>
     </div>
 

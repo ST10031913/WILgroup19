@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\ShadowOfHisWings.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\Counselors\\pst barney.jpg",
+      "PackagePath": "staticwebassets\\Counselors\\pst barney.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\Counselors\\pst samuel.jpg",
+      "PackagePath": "staticwebassets\\Counselors\\pst samuel.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\Counselors\\pst segai-jessie.jpg",
+      "PackagePath": "staticwebassets\\Counselors\\pst segai-jessie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\Outreach1.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\Outreach1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach2.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach3.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach4.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach5.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach6.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach7.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\OutReach\\outreach8.jpg",
+      "PackagePath": "staticwebassets\\OutReach\\outreach8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\Privacy-Policy\\Privacy Policy.pdf",
+      "PackagePath": "staticwebassets\\Privacy-Policy\\Privacy Policy.pdf"
+    },
+    {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -13,32 +61,60 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\2b97d5f6-c8a8-4601-a34c-f21f8d6f969b_IMG-20241112-WA0003.jpg",
-      "PackagePath": "staticwebassets\\images\\2b97d5f6-c8a8-4601-a34c-f21f8d6f969b_IMG-20241112-WA0003.jpg"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\3ba7efd0-e695-4d47-9e3f-453cd1171ba4_IMG-20241112-WA0021.jpg",
+      "PackagePath": "staticwebassets\\images\\3ba7efd0-e695-4d47-9e3f-453cd1171ba4_IMG-20241112-WA0021.jpg"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\6fabaab0-fde2-410b-9a44-15f8e57588f1_adps12.png",
-      "PackagePath": "staticwebassets\\images\\6fabaab0-fde2-410b-9a44-15f8e57588f1_adps12.png"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\52f05ee6-b471-4cdb-abf0-b90e862d3849_IMG-20241112-WA0030.jpg",
+      "PackagePath": "staticwebassets\\images\\52f05ee6-b471-4cdb-abf0-b90e862d3849_IMG-20241112-WA0030.jpg"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\71894602-8059-4b5a-a866-ac94cfb65cac_adps13.png",
-      "PackagePath": "staticwebassets\\images\\71894602-8059-4b5a-a866-ac94cfb65cac_adps13.png"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\6d647131-471a-433a-a058-628664c55405_20241113_140638.jpg",
+      "PackagePath": "staticwebassets\\images\\6d647131-471a-433a-a058-628664c55405_20241113_140638.jpg"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\75cdb0d2-7fb6-46b9-b27b-f6c47c96499e_IMG-20241112-WA0003.jpg",
-      "PackagePath": "staticwebassets\\images\\75cdb0d2-7fb6-46b9-b27b-f6c47c96499e_IMG-20241112-WA0003.jpg"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\71db9694-917f-47ad-940a-a97e45ecaccb_20241113_135819.jpg",
+      "PackagePath": "staticwebassets\\images\\71db9694-917f-47ad-940a-a97e45ecaccb_20241113_135819.jpg"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\9225a6a4-1474-4a14-84e5-0595bc19e421_IMG-20241112-WA0010.jpg",
-      "PackagePath": "staticwebassets\\images\\9225a6a4-1474-4a14-84e5-0595bc19e421_IMG-20241112-WA0010.jpg"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\7ca00783-8356-41a1-8c8d-f0a43e50ed9a_20241113_140447.jpg",
+      "PackagePath": "staticwebassets\\images\\7ca00783-8356-41a1-8c8d-f0a43e50ed9a_20241113_140447.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\7d7cc2fa-e9a4-46a8-83e5-d27b0463ed19_IMG-20241112-WA0015.jpg",
+      "PackagePath": "staticwebassets\\images\\7d7cc2fa-e9a4-46a8-83e5-d27b0463ed19_IMG-20241112-WA0015.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\851c9678-6a2b-443c-856d-13bcd7ebf8c8_IMG-20241112-WA0010.jpg",
+      "PackagePath": "staticwebassets\\images\\851c9678-6a2b-443c-856d-13bcd7ebf8c8_IMG-20241112-WA0010.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\89dd055e-f179-4082-8e9a-3d43c200a0fa_20241113_140016.jpg",
+      "PackagePath": "staticwebassets\\images\\89dd055e-f179-4082-8e9a-3d43c200a0fa_20241113_140016.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\8bf8ee1f-3a16-4de0-adf2-0dd31eab86e0_20241113_140535.jpg",
+      "PackagePath": "staticwebassets\\images\\8bf8ee1f-3a16-4de0-adf2-0dd31eab86e0_20241113_140535.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\8dc9548b-42de-4d0e-9fa9-e9f11a6f3a46_20241113_140055.jpg",
+      "PackagePath": "staticwebassets\\images\\8dc9548b-42de-4d0e-9fa9-e9f11a6f3a46_20241113_140055.jpg"
     },
     {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\backgroud.jpg.jpg",
       "PackagePath": "staticwebassets\\images\\backgroud.jpg.jpg"
     },
     {
-      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\c020e240-4cbf-4e6e-9310-61d53ae88f66_IMG-20241112-WA0011.jpg",
-      "PackagePath": "staticwebassets\\images\\c020e240-4cbf-4e6e-9310-61d53ae88f66_IMG-20241112-WA0011.jpg"
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\d6b8c0bb-23a5-49cd-8c76-d96f9b37d98c_20241113_140430.jpg",
+      "PackagePath": "staticwebassets\\images\\d6b8c0bb-23a5-49cd-8c76-d96f9b37d98c_20241113_140430.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\e2c1966b-fa5b-4fca-b13a-1badb111eb08_IMG-20241112-WA0005.jpg",
+      "PackagePath": "staticwebassets\\images\\e2c1966b-fa5b-4fca-b13a-1badb111eb08_IMG-20241112-WA0005.jpg"
+    },
+    {
+      "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\images\\f119efb2-a158-4023-b33e-acb302c7e35c_IMG-20241112-WA0027.jpg",
+      "PackagePath": "staticwebassets\\images\\f119efb2-a158-4023-b33e-acb302c7e35c_IMG-20241112-WA0027.jpg"
     },
     {
       "Id": "C:\\Users\\liama\\source\\repos\\ShadowOfHisWings\\ShadowOfHisWings\\wwwroot\\js\\site.js",

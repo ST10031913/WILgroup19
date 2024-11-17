@@ -21,6 +21,9 @@ namespace ShadowOfHisWings.Models
         [Display(Name = "Image Path")]
         public string? ImagePath { get; set; } // Stores the path of uploaded images
 
+        [Display(Name = "Category (for Images)")]
+        public string? Category { get; set; } // Optional for videos
+
         [Display(Name = "Date Uploaded")]
         public DateTime DateUploaded { get; set; } = DateTime.Now;
     }

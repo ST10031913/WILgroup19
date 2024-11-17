@@ -102,30 +102,36 @@ namespace ShadowOfHisWings.Controllers
         }
 
         // GET: Events/Delete/5
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(int? id)
         {
-            var evt = await _context.Events.FindAsync(id);
-            if (evt == null)
+            if (id == null)
             {
                 return NotFound();
             }
-            return View(evt);
+
+            var eventItem = await _context.Events.FindAsync(id);
+            if (eventItem == null)
+            {
+                return NotFound();
+            }
+
+            return View(eventItem); // Returns the Delete confirmation view
         }
 
-        // POST: Events/Delete/5
-        [HttpPost, ActionName("Delete")]
+        // POST: Events/DeleteConfirmed/5
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var evt = await _context.Events.FindAsync(id);
-            if (evt != null)
+            var eventItem = await _context.Events.FindAsync(id);
+            if (eventItem == null)
             {
-                _context.Events.Remove(evt);
-                await _context.SaveChangesAsync();
+                return NotFound();
             }
-            return RedirectToAction(nameof(Manage));
+
+            _context.Events.Remove(eventItem);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Manage)); // Redirect to the Manage view after deletion
         }
     }
 }

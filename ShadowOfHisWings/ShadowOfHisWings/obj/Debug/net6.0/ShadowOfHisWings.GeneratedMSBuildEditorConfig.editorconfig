@@ -66,6 +66,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Media/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Media/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -86,12 +90,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWFcVmlkZW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Programs/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbXNcRGV0YWlscy5jc2h0bWw=
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Services/Counsellors.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcQ291bnNlbGxvcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Programs/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZ3JhbXNcSW5kZXguY3NodG1s
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Services/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Services/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Services/OutreachPrograms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcT3V0cmVhY2hQcm9ncmFtcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Services/Programs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZXNcUHJvZ3JhbXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/liama/source/repos/ShadowOfHisWings/ShadowOfHisWings/Views/Shared/Error.cshtml]
