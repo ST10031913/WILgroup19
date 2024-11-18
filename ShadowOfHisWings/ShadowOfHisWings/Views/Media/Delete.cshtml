@@ -1,0 +1,50 @@
+﻿@model ShadowOfHisWings.Models.Media
+
+@{
+    ViewBag.Title = "Delete Media";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Shadow Of His Wings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container text-center my-5">
+        <h2 class="mb-4">@ViewBag.Title</h2>
+
+        <div class="overlay-box">
+            <h3>Are you sure you want to delete this media item?</h3>
+
+            <div class="my-4">
+                <h4>@Model.Title</h4>
+                @if (Model.Type == "Image")
+                {
+                    <img src="@Model.ImagePath" alt="@Model.Title" width="200" class="img-fluid rounded shadow-sm mb-3" />
+                }
+                else if (Model.Type == "Video")
+                {
+                    <p><a href="@Model.Url" target="_blank" class="text-primary">View Video</a></p>
+                }
+                <p class="text-white">@Model.DateUploaded.ToString("MMMM dd, yyyy")</p> <!-- Updated for better visibility -->
+            </div>
+
+            <div class="d-flex justify-content-center mt-4">
+                @using (Html.BeginForm("DeleteConfirmed", "Media", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(m => m.Id)
+                    <button type="submit" class="btn btn-danger me-3">Delete</button>
+                    <a href="@Url.Action("Manage", "Media")" class="btn btn-secondary">Cancel</a>
+                }
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
