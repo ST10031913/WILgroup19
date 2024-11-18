@@ -14,25 +14,12 @@ namespace ShadowOfHisWings.Controllers
             _context = context;
         }
 
-        // GET: Donation
-        public IActionResult Index()
+       public IActionResult Index()
         {
             return View();
         }
-
-        // POST: Donation/Submit
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Submit(Donation donation)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(donation);
-                await _context.SaveChangesAsync();
-                ViewBag.Message = "Thank you for your donation!";
-                return View("Index");
-            }
-            return View("Index", donation);
-        }
+   
     }
+    
 }
+

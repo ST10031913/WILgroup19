@@ -251,7 +251,7 @@ namespace ShadowOfHisWings.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Contacts");
+                    b.ToTable("Contacts", (string)null);
                 });
 
             modelBuilder.Entity("ShadowOfHisWings.Models.Donation", b =>
@@ -282,7 +282,7 @@ namespace ShadowOfHisWings.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Donations");
+                    b.ToTable("Donations", (string)null);
                 });
 
             modelBuilder.Entity("ShadowOfHisWings.Models.Event", b =>
@@ -313,7 +313,7 @@ namespace ShadowOfHisWings.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Events");
+                    b.ToTable("Events", (string)null);
                 });
 
             modelBuilder.Entity("ShadowOfHisWings.Models.Media", b =>
@@ -346,7 +346,7 @@ namespace ShadowOfHisWings.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Media");
+                    b.ToTable("Media", (string)null);
                 });
 
             modelBuilder.Entity("ShadowOfHisWings.Models.Testimonial", b =>
@@ -373,7 +373,7 @@ namespace ShadowOfHisWings.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Testimonials");
+                    b.ToTable("Testimonials", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

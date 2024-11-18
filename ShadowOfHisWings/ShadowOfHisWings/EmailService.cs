@@ -30,7 +30,7 @@ namespace ShadowOfHisWings.Services
             var mailMessage = new MailMessage
             {
                 From = new MailAddress(_configuration["Smtp:SenderEmail"]),
-                Subject = contact.Subject, // Use the subject from the contact form
+                Subject = contact.Subject, 
                 Body = $"Name: {contact.Name}\nEmail: {contact.Email}\nMessage: {contact.Message}",
                 IsBodyHtml = false,
             };
