@@ -90,7 +90,7 @@ The **Shadow of His Wings** website is a Christian-centered platform developed t
 ### **Setup Steps**
 1. Clone the repository:
    ```bash
-   git clone https://github.com/liam-007/shadow-of-his-wings.git
+   git clone [https://github.com/liam-007/shadow-of-his-wings.git](https://github.com/ST10031913/WILgroup19)
    ```
 2. Open the project in Visual Studio.
 3. Configure the database connection string in the `appsettings.json` file.
@@ -124,10 +124,11 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ---
 
 ## **Contributors**
-- **Liam** – Developer and designer.  
+- **Liam Abraham** – Fullstack Developer and designer.
+- **Saneliso Lehlohla** – Fullstack Developer and documentation.
 - Supported by the team at **Shadow of His Wings Rehabilitation Center**.
 
 ---
 
 ## **Contact**
-For questions or support, please contact **admin@shadowofhiswings.com**.# WILgroup19
+For questions or support, please contact **wilgroup19@gmail.com**.# WILgroup19
