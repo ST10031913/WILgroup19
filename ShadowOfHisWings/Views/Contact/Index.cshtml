@@ -13,51 +13,47 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome for Icons -->
 </head>
 <body>
     <div class="container mt-5 contact-page">
-        <div class="header-section text-center text-white mb-4">
-            <h2>@ViewBag.Title</h2>
-            <p class="lead">
-                Have questions or need more information? Get in touch with us, and we’ll be happy to assist you.
-            </p>
-        </div>
+        <h2 class="text-center mb-4">@ViewBag.Title</h2>
 
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <div class="card contact-card shadow-sm p-4">
-                    <h4 class="text-center mb-3">Get in Touch</h4>
+                <div class="card p-4 shadow-sm">
+                    <h4 class="text-center">Get in Touch</h4>
+                    <p class="text-center">
+                        If you have any questions or need more information, feel free to reach out to us.
+                    </p>
                     <hr />
-                    <p class="d-flex align-items-center mb-3">
-                        <i class="fas fa-phone-alt me-2 text-primary"></i>
-                        <strong>Contact:</strong> Rita Abraham &nbsp;|&nbsp;
-                        <a href="tel:+27748910714" class="ms-1">+27 74 891 0714</a>
+                    <p>
+                        <strong>Contact Number:</strong>
+                        <strong>Rita Abraham</strong>
+                        <a href="tel:+27748910714">+27 74 891 0714</a>
                     </p>
-                    <p class="d-flex align-items-center mb-3">
-                        <i class="fas fa-envelope me-2 text-primary"></i>
+                    <p>
                         <strong>Email:</strong>
-                        <a href="mailto:shadowofhiswings@gmail.com" class="ms-1">shadowofhiswings@gmail.com</a>
+                        <a href="mailto:shadowofhiswings@gmail.com">shadowofhiswings@gmail.com</a>
                     </p>
-                    <p class="d-flex align-items-center mb-3">
-                        <i class="fas fa-map-marker-alt me-2 text-primary"></i>
-                        <strong>Address:</strong>
-                        <a href="https://www.google.com/maps/search/?api=1&query=151+Parkside+Drive,+South+Africa" target="_blank" class="ms-1">
+                    <p>
+                        <strong>NGO Address:</strong>
+                        <a href="https://www.google.com/maps/search/?api=1&query=151+Parkside+Drive,+South+Africa" target="_blank">
                             151 Parkside Dr, Silverglen
                         </a>
                     </p>
                 </div>
             </div>
         </div>
+       
 
         <!-- More Button and Menu -->
         <div class="text-center mt-5 more-button-container">
-            <button class="btn btn-outline-dark btn-more" onclick="toggleMenu()">More</button>
-            <div id="moreMenu" class="more-menu mt-3">
-                <a href="@Url.Action("Index", "Home")" class="d-block">Home</a>
-                <a href="@Url.Action("About", "Home")" class="d-block">About Us</a>
-                <a href="@Url.Action("Index", "Donation")" class="d-block">Donate</a>
-                <a href="@Url.Action("Index", "Events")" class="d-block">Events</a>
+            <button class="btn-more" onclick="toggleMenu()">More</button>
+            <div id="moreMenu" class="more-menu">
+                <a href="@Url.Action("Index", "Home")">Home</a>
+                <a href="@Url.Action("About", "Home")">About Us</a>
+                <a href="@Url.Action("Index", "Donation")">Donate</a>
+                <a href="@Url.Action("Index", "Events")">Events</a>
             </div>
         </div>
 
@@ -66,56 +62,14 @@
                 var menu = document.getElementById('moreMenu');
                 menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
             }
+
+            // Auto-expand textarea
+            document.querySelectorAll('.auto-expand').forEach(function (textarea) {
+                textarea.addEventListener('input', function () {
+                    this.style.height = 'auto';
+                    this.style.height = (this.scrollHeight) + 'px';
+                });
+            });
         </script>
-    </div>
-
-    <style>
-        .contact-page {
-            background-color: #f9f9f9;
-            padding: 20px;
-            color: #333;
-        }
-
-        .header-section {
-            background: #343a40;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .contact-card {
-            border: none;
-            background: #fff;
-            border-radius: 8px;
-        }
-
-            .contact-card p {
-                font-size: 1rem;
-            }
-
-        .more-button-container {
-            margin-top: 20px;
-        }
-
-        .btn-more {
-            padding: 10px 20px;
-            border-radius: 50px;
-        }
-
-        .more-menu {
-            display: none;
-            margin-top: 10px;
-        }
-
-            .more-menu a {
-                font-weight: bold;
-                color: #007bff;
-                text-decoration: none;
-                margin: 5px 0;
-            }
-
-                .more-menu a:hover {
-                    color: #0056b3;
-                }
-    </style>
 </body>
 </html>

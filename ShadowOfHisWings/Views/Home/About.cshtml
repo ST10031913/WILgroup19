@@ -13,66 +13,6 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/custom.css" asp-append-version="true" />
-    <style>
-        .bg {
-            background: url('~/path/to/your/background.jpg') no-repeat center center;
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .vertical-center {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .text-frame {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-            .text-frame h2 {
-                font-weight: bold;
-                color: #000; /* Black color for headings */
-                text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6); /* Adjusted text shadow for visibility */
-            }
-
-            .text-frame p {
-                font-weight: bold;
-                color: #fff; /* White color for paragraphs */
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text shadow for readability */
-            }
-
-        .btn-more {
-            margin-top: 20px;
-        }
-
-        .more-menu {
-            display: none;
-            margin-top: 20px;
-        }
-
-            .more-menu a {
-                display: block;
-                margin-bottom: 10px;
-            }
-
-        .map-container h2 {
-            color: #000; /* Black color for the Location heading */
-            font-weight: bold;
-        }
-
-        .map-container .recovery-center {
-            color: #000; /* Black color for the Recovery Centre text */
-            text-align: center;
-            margin-top: 20px;
-            font-size: 1.5em;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
     <div class="bg">
@@ -91,22 +31,6 @@
         </div>
     </div>
 
-    <!-- Google Map Section -->
-    <div class="container mt-5 map-container">
-        <h2 class="text-center">Location</h2>
-        <div class="text-center mt-4">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.9395013843847!2d30.900427515478558!3d-29.924952782406506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7ab310b224b53%3A0x891e9b29f5907b62!2s151%20Parkside%20Dr%2C%20Silverglen%2C%20Chatsworth%2C%204092%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1621362911975!5m2!1sen!2sus"
-                    width="600"
-                    height="450"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"></iframe>
-        </div>
-        <div class="recovery-center">
-            Shadow of His Wings Recovery Centre
-        </div>
-    </div>
-
     <script>
         function toggleMenu() {
             var menu = document.getElementById('more-menu');
@@ -115,4 +39,3 @@
     </script>
 </body>
 </html>
-

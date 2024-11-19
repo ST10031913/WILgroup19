@@ -1,18 +1,14 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using ShadowOfHisWings.Models;
 
 namespace ShadowOfHisWings.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
         {
         }
-
-        public DbSet<Donation> Donations { get; set; }
-        public DbSet<Contact> Contacts { get; set; }
-        public DbSet<Event> Events { get; set; }
     }
 }

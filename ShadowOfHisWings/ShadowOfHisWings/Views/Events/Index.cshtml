@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ShadowOfHisWings.Models.Event>
+
+@{
+    ViewBag.Title = "Events";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - Shadow Of His Wings</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="main-content container my-5">
+        <h2 class="text-center mb-4" style="color: #ffffff;">@ViewBag.Title</h2>
+
+        @if (!Model.Any())
+        {
+            <p class="no-events">No events are currently scheduled.</p>
+        }
+        else
+        {
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                @foreach (var evt in Model)
+                {
+                    <div class="col">
+                        <div class="event-card h-100">
+                            <h3 class="event-title">@evt.Title</h3>
+                            <p class="event-description">@evt.Description</p>
+                            <p class="event-date"><strong>Date:</strong> @evt.EventDate.ToString("MMMM dd, yyyy")</p>
+                            <p class="event-location"><strong>Location:</strong> @evt.Location</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

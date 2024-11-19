@@ -1,131 +1,72 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ShadowOfHisWings.Data;
 using ShadowOfHisWings.Models;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
 namespace ShadowOfHisWings.Controllers
 {
     public class EventsController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public EventsController(ApplicationDbContext context)
+        // Display the list of events (accessible to everyone)
+        public ActionResult Index()
         {
-            _context = context;
-        }
-
-        // GET: Events
-        [AllowAnonymous]
-        public IActionResult Index()
-        {
-            var events = _context.Events.ToList();
+            var events = new List<Event>
+            {
+                new Event { Title = "Event 1", Description = "Description 1", Location = "Location 1", Date = DateTime.Now },
+                new Event { Title = "Event 2", Description = "Description 2", Location = "Location 2", Date = DateTime.Now.AddDays(1) }
+            };
             return View(events);
         }
 
-        // GET: Events/Manage
-        [Authorize(Roles = "Admin")]
-        public IActionResult Manage()
-        {
-            var events = _context.Events.ToList();
-            return View(events);
-        }
-
-        // GET: Events/Create
-        [Authorize(Roles = "Admin")]
-        public IActionResult Create()
+        // Add event - restricted to Admins
+        [Authorize(Policy = "AdminOnly")]
+        [HttpGet]
+        public ActionResult AddEvent()
         {
             return View();
         }
 
-        // POST: Events/Create
+        [Authorize(Policy = "AdminOnly")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Create(Event evt)
+        public ActionResult AddEvent(Event model)
         {
             if (ModelState.IsValid)
             {
-                _context.Events.Add(evt);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Manage));
+                // Code to add event to database
+                return RedirectToAction("Index");
             }
-            return View(evt);
+            return View(model);
         }
 
-        // GET: Events/Edit/5
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id)
+        // Edit event - restricted to Admins
+        [Authorize(Policy = "AdminOnly")]
+        [HttpGet]
+        public ActionResult EditEvent(int id)
         {
-            var evt = await _context.Events.FindAsync(id);
-            if (evt == null)
-            {
-                return NotFound();
-            }
-            return View(evt);
+            // Code to fetch event from database using the id
+            var eventToEdit = new Event { Title = "Event 1", Description = "Description 1", Location = "Location 1", Date = DateTime.Now };
+            return View(eventToEdit);
         }
 
-        // POST: Events/Edit/5
+        [Authorize(Policy = "AdminOnly")]
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Edit(int id, Event evt)
+        public ActionResult EditEvent(Event model)
         {
-            if (id != evt.Id)
-            {
-                return BadRequest();
-            }
-
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(evt);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Manage));
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!_context.Events.Any(e => e.Id == evt.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+                // Code to update event in database
+                return RedirectToAction("Index");
             }
-            return View(evt);
+            return View(model);
         }
 
-        // GET: Events/Delete/5
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> Delete(int id)
+        // Delete event - restricted to Admins
+        [Authorize(Policy = "AdminOnly")]
+        [HttpPost]
+        public ActionResult DeleteEvent(int id)
         {
-            var evt = await _context.Events.FindAsync(id);
-            if (evt == null)
-            {
-                return NotFound();
-            }
-            return View(evt);
-        }
-
-        // POST: Events/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var evt = await _context.Events.FindAsync(id);
-            if (evt != null)
-            {
-                _context.Events.Remove(evt);
-                await _context.SaveChangesAsync();
-            }
-            return RedirectToAction(nameof(Manage));
+            // Code to delete the event from the database using the id
+            return RedirectToAction("Index");
         }
     }
 }

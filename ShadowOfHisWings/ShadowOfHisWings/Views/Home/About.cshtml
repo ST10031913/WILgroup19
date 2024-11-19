@@ -1,0 +1,166 @@
+﻿@model ShadowOfHisWings.Models.Home
+
+@{
+    ViewBag.Title = Model.Title;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="main-content">
+        <!-- Hero Section -->
+        <div class="bg position-relative home-index-page">
+            <div class="container vertical-center">
+                <div class="text-center text-frame">
+                    <h2 class="display-4">@Model.Title</h2>
+                    <p class="lead">@Model.AboutInfo</p>
+                    <a href="@Url.Action("Index", "Contact")" class="btn btn-primary btn-lg m-2">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission Statement Section -->
+        <div class="container py-5 text-center">
+            <h2 class="mb-4">Mission Statement</h2>
+            <p class="lead mx-auto" style="max-width: 800px;">
+                Here at SHADOW OF HIS WINGS RECOVERY CENTRE, our mission is to provide affordable, personalised, supportive, and compassionate care to those who are suffering from an addiction. Our mission is also to treat each client’s underlying core problems in order to help them heal mentally, physically, and spiritually.
+            </p>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="container-fluid py-5 vision-section">
+            <div class="container text-center">
+                <h2 class="mb-4">Our Vision</h2>
+                <p class="lead mx-auto" style="max-width: 800px;">
+                    SHADOW OF HIS WINGS RECOVERY CENTRE will continue to facilitate opportunities for the individuals we serve to fulfil their recovery goals and once again be re-integrated as valued community members. Our vision is based on the foundation of love, integrity, and trust, a respect for the dignity of life, and a spirit of building hope together.
+                </p>
+            </div>
+        </div>
+
+        <!-- Core Values Section -->
+        <div class="container py-5">
+            <h2 class="mb-5 text-center">Our Core Values</h2>
+            <div class="row">
+                <!-- Core Value Cards -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-heart fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Respect and Love</h5>
+                            <p class="card-text">We respect and love ALL individuals regardless of race, gender, beliefs, and background.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-hands-helping fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">12-Step Recovery Program</h5>
+                            <p class="card-text">We are committed to providing a recovery program based on the 12 steps of recovery.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-user-check fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Opportunity for Success</h5>
+                            <p class="card-text">We ensure that every resident is given the opportunity to succeed in their recovery from their addiction(s).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-brain fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Holistic Approach</h5>
+                            <p class="card-text">We believe that alcohol and drug addiction is a disease affecting the mind, body, and soul.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-balance-scale fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Prudent Stewardship</h5>
+                            <p class="card-text">We show discipline in stewardship and ensure prudent financial practices at all times.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-users fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Priority on Residents and Staff</h5>
+                            <p class="card-text">We always give priority to any matters related to our residents and staff.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-seedling fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Living by Attributes</h5>
+                            <p class="card-text">We strive to live by attributes: love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body text-dark">
+                            <i class="fas fa-hands fa-2x mb-3 text-primary"></i>
+                            <h5 class="card-title">Reflecting Our Values</h5>
+                            <p class="card-text">Our actions reflect the values we believe in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Video Section -->
+        <div class="container-fluid py-5 video-section">
+            <div class="container">
+                <h2 class="text-center text-white mb-5">Hear From Our Team</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/heyhBjII-wc" title="Founder - Rita Abraham" allowfullscreen></iframe>
+                        </div>
+                        <h5 class="mt-3 text-white">Rita Abraham - Founder of Shadow of His Wings Recovery Centre</h5>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/DA6SaVXuB8c" title="Resident Pastor - Barney Kistnasamy" allowfullscreen></iframe>
+                        </div>
+                        <h5 class="mt-3 text-white">Pst Barney - Resident Pastor of Shadow of His Wings Recovery Centre</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Location Section -->
+        <div class="container py-5">
+            <h2 class="text-center mb-5">Our Location</h2>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3446.9395013843847!2d30.900427515478558!3d-29.924952782406506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7ab310b224b53%3A0x891e9b29f5907b62!2s151%20Parkside%20Dr%2C%20Silverglen%2C%20Chatsworth%2C%204092%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1621362911975!5m2!1sen!2sus"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h5 class="mt-3">Shadow of His Wings Recovery Centre</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

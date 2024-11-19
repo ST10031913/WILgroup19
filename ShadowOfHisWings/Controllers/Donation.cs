@@ -1,38 +1,28 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ShadowOfHisWings.Data;
 using ShadowOfHisWings.Models;
-using System.Threading.Tasks;
 
 namespace ShadowOfHisWings.Controllers
 {
     public class DonationController : Controller
     {
-        private readonly ApplicationDbContext _context;
-
-        public DonationController(ApplicationDbContext context)
+        public ActionResult Index()
         {
-            _context = context;
+            var model = new Donation();
+            return View(model);
         }
 
-        // GET: Donation
-        public IActionResult Index()
-        {
-            return View();
-        }
-
-        // POST: Donation/Submit
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Submit(Donation donation)
+        public ActionResult Submit(Donation model)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(donation);
-                await _context.SaveChangesAsync();
+               
+
                 ViewBag.Message = "Thank you for your donation!";
-                return View("Index");
+                return View("Index", new Donation());
             }
-            return View("Index", donation);
+
+            return View("Index", model);
         }
     }
 }
