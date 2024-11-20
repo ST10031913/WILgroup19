@@ -90,7 +90,7 @@ The **Shadow of His Wings** website is a Christian-centered platform developed t
 ### **Setup Steps**
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/liam-007/shadow-of-his-wings.git](https://github.com/ST10031913/WILgroup19)
+   git clone [https://github.com/liam-007/shadow-of-his-wings.git](https://github.com/ST10031913/WILgroup19.git))
    ```
 2. Open the project in Visual Studio.
 3. Configure the database connection string in the `appsettings.json` file.
